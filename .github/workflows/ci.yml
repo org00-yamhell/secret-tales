@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm test
+      - name: Push image
+        run: echo "${{ secrets.CI_REGISTRY_TOKEN }}" | docker login ghcr.io -u secret-tales-ci --password-stdin
+        if: github.ref == 'refs/heads/main'
