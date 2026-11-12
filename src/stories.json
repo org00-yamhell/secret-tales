@@ -1,0 +1,5 @@
+[
+  { "id": 1, "author": "anonymous-fox", "title": "The Lighthouse Keeper", "ttl": 86400 },
+  { "id": 2, "author": "night-owl", "title": "Letters From Platform 9", "ttl": 86400 },
+  { "id": 3, "author": "quiet-river", "title": "The Last Bakery", "ttl": 3600 }
+]
