@@ -1,0 +1,6 @@
+{
+  "name": "secret-tales",
+  "version": "1.4.2",
+  "private": true,
+  "scripts": { "start": "node src/server.js", "test": "node --test" }
+}
